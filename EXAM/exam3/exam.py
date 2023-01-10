@@ -21,7 +21,6 @@ def split_string_into_ints(numbers: str) -> list:
     return result
 
 
-
 def repeat_multiples(numbers: list) -> list:
     """
     Repeat every element divisible by 2 twice, and every element divisible by 3 three times.
