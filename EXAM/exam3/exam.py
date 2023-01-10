@@ -11,7 +11,14 @@ def split_string_into_ints(numbers: str) -> list:
     split_string_into_ints("0") => [0]
     split_string_into_ints("-1,-2,3") => [-1, -2, 3]
     """
-    pass
+    result = []
+    numbers_split = numbers.split(",")
+    if numbers == "":
+        return result
+    for a in numbers_split:
+        a = int(a)
+        result.append(a)
+    return result
 
 
 def repeat_multiples(numbers: list) -> list:
